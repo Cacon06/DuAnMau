@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/seaview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Tìm Kiếm Tại Đây..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tang"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btntang"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="giam"
+            android:id="@+id/btngiam"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="130dp"
+        android:id="@+id/lvsach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="2sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatbtn"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/baseline_add_24"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
